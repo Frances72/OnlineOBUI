@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="za.astrosec.onlineobui.views.ManagerActivity">
+
+    <include layout="@layout/content_manager" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="true"
+        android:background="#9e9fa7">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topBar"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Online Occurrence Book"
+                android:id="@+id/txtHeader"
+                android:layout_weight="1"
+                android:layout_margin="16dp"
+                android:textAlignment="center"
+                android:textColor="#fdeded"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgBtnMenu"
+                    android:src="@drawable/menuicon"
+                    android:background="#00000000"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewPanel">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView"
+                android:choiceMode="singleChoice"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

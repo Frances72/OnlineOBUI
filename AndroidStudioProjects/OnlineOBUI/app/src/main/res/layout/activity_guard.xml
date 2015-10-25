@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="za.astrosec.onlineobui.views.GuardActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="true"
+        android:background="#9e9fa7">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topBar"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Online Occurrence Book"
+                android:id="@+id/txtHeader"
+                android:layout_weight="1"
+                android:layout_margin="16dp"
+                android:textAlignment="center"
+                android:textColor="#fdeded"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgBtnAddOccurrence"
+                    android:src="@drawable/plusicon"
+                    android:background="#00000000"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFieldHolder"
+            android:layout_margin="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/loginName"
+                android:labelFor="@color/accent_material_dark"
+                android:background="@color/background_floating_material_light"
+                android:hint="NAME AND SURNAME"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="datetime"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:background="#faf5f5"
+                android:hint="Enter the date and time"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/textOccurrence"
+                android:labelFor="@color/accent_material_dark"
+                android:background="@color/background_floating_material_light"
+                android:hint="Enter the occurrence details here"
+                android:layout_margin="5dp"
+                android:editable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/loginButtonHolder">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="SUBMIT"
+                android:id="@+id/submitButton"
+                android:layout_margin="16dp"
+                android:enabled="true"
+                android:labelFor="@color/abc_secondary_text_material_dark"
+                android:background="#fafbfd"
+                android:textSize="25dp"
+                android:textColor="#262424"
+                android:typeface="sans" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
